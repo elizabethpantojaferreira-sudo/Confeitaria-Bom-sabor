@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Confeitaria Bom Sabor — bolos e doces feitos com carinho para momentos especiais.">
+<title>Confeitaria Bom Sabor | Doces que encantam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#c8758d;--rose2:#f1cbd4;--cream:#fff8f5;--ink:#563b37;--muted:#8c716d;--line:#f1dfe0;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}button,input,select{font:inherit}button,a{touch-action:manipulation}a{color:inherit;text-decoration:none}button{cursor:pointer}.announcement{text-align:center;background:#754b4a;color:#fff7f2;padding:10px 12px;font-size:12px;letter-spacing:.5px}
+header{position:sticky;top:0;z-index:20;background:#fff9f6ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:15px 5%;display:flex;align-items:center;gap:22px;justify-content:space-between}.brand{font:700 25px "Playfair Display",serif;color:var(--rose);white-space:nowrap;letter-spacing:.1px}.brand small{display:block;font:600 9px "DM Sans",sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:2px}nav{display:flex;align-items:center;gap:22px;font-size:13px}nav a:hover{color:var(--rose)}.tools{display:flex;gap:9px;align-items:center}.iconbtn,.menu-btn{border:1px solid var(--line);background:white;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;color:var(--ink);font-size:18px;position:relative}.count{position:absolute;right:-3px;top:-4px;background:var(--rose);color:white;border-radius:50%;min-width:18px;height:18px;font-size:11px;display:grid;place-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:30px;background:var(--rose);color:white;padding:13px 21px;font-weight:700;font-size:13px;transition:.2s}.btn:hover{background:#8f455b;transform:translateY(-1px)}.btn.outline{background:transparent;color:var(--rose);border:1px solid var(--rose)}.btn.small{padding:10px 13px;font-size:12px}.menu-btn{display:none}
+.hero{padding:54px 7% 65px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px;max-width:1440px;margin:auto}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:3px;color:var(--rose);font-weight:700}.hero h1{font:600 clamp(42px,5vw,68px)/1.08 "Playfair Display",serif;margin:17px 0}.hero h1 em{font-weight:500;color:var(--rose)}.hero p{color:var(--muted);line-height:1.85;max-width:470px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero-note{font-size:12px;color:var(--muted);margin-top:22px}.hero-photo{position:relative}.hero-photo img{width:100%;height:510px;object-fit:cover;border-radius:48% 48% 24px 24px}.floating-note{position:absolute;bottom:25px;left:-25px;background:white;padding:16px 20px;border-radius:14px;box-shadow:0 12px 40px #49312f1c;font-size:12px}.floating-note strong{display:block;font:600 19px "Playfair Display",serif;margin-bottom:3px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:22px 7%;background:#f8ece8;text-align:center}.benefits strong{display:block;font-size:13px;margin:5px}.benefits span{font-size:12px;color:var(--muted)}section.catalog{padding:76px 7%;max-width:1440px;margin:auto}.section-head{text-align:center;margin:0 auto 30px}.section-head h2{font:600 clamp(30px,4vw,43px) "Playfair Display",serif;margin:12px 0}.section-head p{color:var(--muted);font-size:14px;line-height:1.7}.catalog-tools{display:flex;gap:12px;justify-content:space-between;align-items:center;margin:30px 0 24px;flex-wrap:wrap}.search-wrap{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:28px;background:white;padding:0 15px;min-width:min(100%,300px);flex:1;max-width:430px}.search-wrap input{border:0;outline:0;padding:13px 0;width:100%;background:transparent}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:white;border-radius:25px;padding:10px 14px;font-size:12px;color:var(--muted)}.filter.active,.filter:hover{background:var(--rose);border-color:var(--rose);color:white}.sort{border:1px solid var(--line);border-radius:25px;background:white;padding:11px 14px;color:var(--muted);font-size:12px}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}.product{background:#fffdfb;border:1px solid #f2e0e0;border-radius:20px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}.product:hover{transform:translateY(-4px);box-shadow:0 14px 32px #49312f12}.product-img{position:relative;overflow:hidden;background:#f4e9e5}.product-img img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .4s}.product:hover img{transform:scale(1.04)}.tag{position:absolute;left:12px;top:12px;background:#fff7f3ed;color:#a85d72;border-radius:20px;padding:7px 10px;font-size:10px;font-weight:700}.product-body{padding:17px;display:flex;flex-direction:column;flex:1}.product h3{font:600 20px "Playfair Display",serif;margin:0 0 7px}.product p{color:var(--muted);font-size:12px;line-height:1.65;margin:0 0 15px;flex:1}.product-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px}.price{font-weight:700;color:var(--rose);font-size:16px}.empty{grid-column:1/-1;text-align:center;padding:45px;color:var(--muted)}.disclaimer{text-align:center;font-size:11px;color:var(--muted);margin-top:22px}
+.story{background:#f8e8e9;padding:70px 7%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}.story img{width:100%;height:370px;object-fit:cover;border-radius:18px}.story h2{font:600 42px "Playfair Display",serif;margin:12px 0}.story p{color:var(--muted);line-height:1.9;font-size:14px}.quote{font:italic 22px "Playfair Display",serif;color:var(--rose);margin-top:20px}
+.cta{text-align:center;padding:75px 7%;background:#fff2f2}.cta h2{font:600 42px "Playfair Display",serif;margin:12px}.cta p{color:var(--muted);line-height:1.8;margin-bottom:24px}.modal-backdrop{position:fixed;inset:0;background:#291b1bd1;z-index:50;display:none;justify-content:flex-end}.modal-backdrop.show{display:flex}.drawer{background:var(--cream);height:100%;width:min(440px,100%);padding:25px;display:flex;flex-direction:column;box-shadow:-10px 0 40px #0002}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px}.drawer h2{font:600 28px "Playfair Display",serif;margin:0}.close{border:0;background:transparent;font-size:28px;color:var(--ink)}.cart-items{overflow:auto;flex:1;padding:12px 0}.cart-row{display:grid;grid-template-columns:68px 1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.cart-row img{width:68px;height:68px;object-fit:cover;border-radius:10px}.cart-row strong{display:block;font-size:13px}.cart-row small{color:var(--muted)}.qty{display:flex;gap:9px;align-items:center;margin-top:7px}.qty button{width:25px;height:25px;border:1px solid var(--line);border-radius:50%;background:white}.remove{border:0;background:transparent;color:var(--rose);font-size:12px}.cart-footer{border-top:1px solid var(--line);padding-top:17px}.total{display:flex;justify-content:space-between;font-weight:700;font-size:18px;margin-bottom:15px}.cart-footer .btn{width:100%}.cart-empty{text-align:center;color:var(--muted);padding:40px 10px;line-height:1.8}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:70;background:#49312f;color:white;padding:13px 20px;border-radius:30px;font-size:13px;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}footer{background:#49312f;color:#fff7f2;padding:36px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}footer .brand{color:#f1c5cf}footer p{font-size:12px;color:#e5d1cc;margin:6px 0}footer a:not(.brand){font-size:12px;color:#fff7f2}
+@media(max-width:1000px){.products{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding-left:5%;padding-right:5%;gap:25px}.hero-photo img{height:420px}nav{gap:12px}}
+@media(max-width:760px){header{padding:12px 4%;gap:10px}.brand{font-size:20px}nav{display:none}.menu-btn{display:grid}.hero{grid-template-columns:1fr;padding:42px 6%;gap:30px}.hero-photo img{height:390px}.floating-note{left:10px}.benefits{padding:20px 5%;gap:8px}.benefits span{font-size:10px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}section.catalog{padding:55px 5%}.product-img img{height:170px}.product-body{padding:12px}.product h3{font-size:17px}.product p{font-size:11px}.product-bottom{align-items:flex-start;flex-direction:column}.catalog-tools{align-items:stretch}.search-wrap{max-width:none}.story{grid-template-columns:1fr;padding:50px 6%;gap:25px}.story img{height:280px}.story h2,.cta h2{font-size:34px}.cta{padding:55px 6%}.filters{overflow-x:auto;padding-bottom:4px}.filter{white-space:nowrap}}
+@media(max-width:390px){.products{grid-template-columns:1fr}.product-img img{height:230px}.brand{font-size:18px}.hero h1{font-size:43px}}
+</style>
+</head>
+<body>
+<div class="announcement">Feito com carinho para adoçar os seus melhores momentos ✦</div>
+<header>
+  <a class="brand" href="#inicio">Confeitaria Bom Sabor<small>DOCES QUE ENCANTAM</small></a>
+  <nav><a href="#inicio">Início</a><a href="#catalogo">Catálogo</a><a href="#historia">Nossa história</a><a href="#contato">Contato</a></nav>
+  <div class="tools">
+    <button class="iconbtn" id="focusSearch" aria-label="Pesquisar produtos" title="Pesquisar">⌕</button>
+    <button class="iconbtn" id="accountBtn" aria-label="Minha conta" title="Minha conta">♙</button>
+    <button class="iconbtn" id="cartOpen" aria-label="Abrir carrinho" title="Carrinho">🛍<span class="count" id="cartCount">0</span></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div><span class="eyebrow">feito com carinho ♡</span><h1>Um docinho, um <em>mimo para você.</em></h1>
+  <p>Tem dias que pedem um carinho extra — e um docinho sempre combina. Escolha seus favoritos e deixe a vida um pouquinho mais doce com a Confeitaria Bom Sabor.</p>
+  <div class="hero-actions"><a class="btn" href="#catalogo">Explorar catálogo <span>→</span></a><a class="btn outline" href="#historia">Conheça a confeitaria</a></div>
+  <div class="hero-note">♡ um mimo feito à mão, com amor e sabor</div></div>
+  <div class="hero-photo"><img src="imagens/49 Sem Título_20261016073926 (1).png" alt="Bolo branco elegante decorado com flores"><div class="floating-note"><strong>Feito para encantar ♡</strong>Seu momento pode ser mais doce.</div></div>
+</section>
+<div class="benefits"><div>♡<strong>Feito com carinho</strong><span>Cada detalhe importa</span></div><div>✧<strong>Para celebrar</strong><span>Doces para bons momentos</span></div><div>❀<strong>Escolha seus favoritos</strong><span>Monte seu pedido com facilidade</span></div></div>
+<section class="catalog" id="catalogo">
+  <div class="section-head"><span class="eyebrow">um mimo a cada mordida ♡</span><h2>Escolha sua doçura</h2><p>Pesquise seus favoritos, monte seu carrinho e prepare um carinho em forma de doce.</p></div>
+  <div class="catalog-tools"><label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Pesquisar bolos, tortas, brigadeiros..." aria-label="Pesquisar no catálogo"></label>
+  <select class="sort" id="sortSelect" aria-label="Ordenar produtos"><option value="default">Ordenar por</option><option value="name">Nome: A–Z</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select></div>
+  <div class="filters" id="filters"><button class="filter active" data-category="Todos">Todos os doces</button><button class="filter" data-category="Bolos">Bolos</button><button class="filter" data-category="Docinhos">Docinhos</button><button class="filter" data-category="Tortas">Tortas</button><button class="filter" data-category="Sobremesas">Sobremesas</button><button class="filter" data-category="Doces do dia">Doces do dia</button></div>
+  <div class="products" id="products"></div>
+  <p class="disclaimer">As imagens são ilustrativas. Os preços exibidos são exemplos e devem ser confirmados com a confeitaria.</p>
+</section>
+<section class="story" id="historia"><img src="imagens/bolo-floral.jpg" alt="Bolo artesanal decorado com flores delicadas"><div><span class="eyebrow">Nossa essência</span><h2>O sabor que transforma momentos.</h2><p>Na Confeitaria Bom Sabor, acreditamos que um doce pode marcar uma lembrança, aproximar pessoas e deixar uma comemoração ainda mais especial. Cada escolha merece atenção e cada ocasião pode ganhar um toque de encanto.</p><p>Você pode encontrar aqui uma inspiração para aniversários, presentes, encontros em família ou simplesmente para adoçar o dia.</p><div class="quote">“Um docinho também é um jeito de dizer: pensei em você.” ♡</div></div></section>
+<section class="cta" id="contato"><span class="eyebrow">Vamos conversar?</span><h2>Seu próximo doce favorito espera por você.</h2><p>Você pode escolher seus favoritos e montar um carrinho cheio de carinho.<br>Os pedidos podem ser confirmados diretamente com a confeitaria.</p><button class="btn" id="contactBtn">Fale com a confeitaria ↗</button></section>
+</main>
+<footer><div><a class="brand" href="#inicio">Confeitaria Bom Sabor</a><p>Feito com carinho para adoçar a sua vida.</p></div><p>© <span id="year"></span> Confeitaria Bom Sabor</p><a href="#catalogo">Voltar ao catálogo ↑</a></footer>
+
+<div class="modal-backdrop" id="cartBackdrop" aria-hidden="true"><aside class="drawer" role="dialog" aria-modal="true" aria-label="Carrinho de compras"><div class="drawer-head"><h2>Seu carrinho</h2><button class="close" id="cartClose" aria-label="Fechar carrinho">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="total"><span>Total estimado</span><span id="cartTotal">R$ 0,00</span></div><button class="btn" id="checkoutBtn">Finalizar pelo WhatsApp ↗</button></div></aside></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const products = [
+ {id:1,name:"Bolo de Casamento",category:"Bolos",price:180,img:"bolo-casamento.jpg",desc:"Bolo elegante com decoração delicada para celebrar momentos únicos.",tag:"Especial"},
+ {id:2,name:"Morangos com Chocolate",category:"Docinhos",price:9,img:"morangos-chocolate.jpg",desc:"Morangos cobertos com chocolate e fios de chocolate branco.",tag:"Favorito"},
+ {id:3,name:"Bolo Arco-Íris",category:"Bolos",price:150,img:"bolo-arco-iris.jpg",desc:"Decoração lúdica e colorida para festas cheias de alegria.",tag:"Festa"},
+ {id:4,name:"Torta de Merengue",category:"Tortas",price:75,img:"torta-merengue.jpg",desc:"Torta cremosa com cobertura de merengue dourado.",tag:"Clássico"},
+ {id:5,name:"Mini Bolo de Festa",category:"Bolos",price:38,img:"mini-bolo-festa.jpg",desc:"Um bolinho especial para celebrar em qualquer ocasião.",tag:"Presente"},
+ {id:6,name:"Brigadeiros Gourmet",category:"Docinhos",price:48,img:"brigadeiros-caixa.jpg",desc:"Caixa de brigadeiros para presentear ou dividir.",tag:"Mais pedido"},
+ {id:7,name:"Torta de Frutas Vermelhas",category:"Tortas",price:82,img:"torta-frutas-vermelhas.jpg",desc:"Frutas vermelhas frescas sobre um creme delicado.",tag:"Frutada"},
+ {id:8,name:"Bolo de Morango — Fatia",category:"Sobremesas",price:16,img:"bolo-morango-fatia.jpg",desc:"Camadas fofinhas, creme suave e morangos.",tag:"Delicado"},
+ {id:9,name:"Cookies com Chocolate",category:"Sobremesas",price:7,img:"cookies.jpg",desc:"Cookies dourados com generosas gotas de chocolate.",tag:"Para o café"},
+ {id:10,name:"Bolo Floral",category:"Bolos",price:165,img:"bolo-floral.jpg",desc:"Bolo decorado com flores para ocasiões especiais.",tag:"Elegante"},
+ {id:11,name:"Macarons",category:"Docinhos",price:8,img:"macarons.jpg",desc:"Docinhos delicados com cores suaves e recheio cremoso.",tag:"Francês"},
+ {id:12,name:"Brownies",category:"Sobremesas",price:10,img:"brownies.jpg",desc:"Brownies intensos de chocolate com casquinha crocante.",tag:"Chocolate"},
+ {id:13,name:"Cupcakes",category:"Docinhos",price:9,img:"cupcakes.jpg",desc:"Cupcakes com cobertura cremosa e acabamento delicado.",tag:"Para festas"},
+ {id:14,name:"Bolo de Morango",category:"Bolos",price:145,img:"bolo-morango.jpg",desc:"Bolo com creme suave e morangos frescos.",tag:"Queridinho"},
+ {id:15,name:"Bolo de Pote",category:"Doces do dia",price:5,img:"sabores-de-bolo-no-pote-mais-vendidos-1200x800.jpg",desc:"Camadinhas fofinhas e cremosas para adoçar sua pausa.",tag:"Um mimo"},
+ {id:16,name:"Trufas",category:"Doces do dia",price:1.5,img:"img_8688 - Copia - Copia.png",desc:"Pequenas delícias de chocolate para matar a vontade de doce.",tag:"Chocolate"},
+ {id:17,name:"Brigadeiro",category:"Doces do dia",price:1,img:"images - Copia - Copia.jpg",desc:"O clássico brigadeiro, pequenininho e cheio de carinho.",tag:"Clássico"}
+];
+let category="Todos", cart={};
+const $=id=>document.getElementById(id);
+const money=n=>n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+function renderProducts(){
+ let list=products.filter(p=>(category==="Todos"||p.category===category)&&(`${p.name} ${p.category} ${p.desc}`.toLowerCase().includes($("searchInput").value.toLowerCase())));
+ const sort=$("sortSelect").value;
+ if(sort==="name")list.sort((a,b)=>a.name.localeCompare(b.name,"pt-BR"));
+ if(sort==="low")list.sort((a,b)=>a.price-b.price);
+ if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ $("products").innerHTML=list.length?list.map(p=>`<article class="product"><div class="product-img"><img loading="lazy" src="imagens/${p.img}" alt="${p.name}"><span class="tag">${p.tag}</span></div><div class="product-body"><h3>${p.name}</h3><p>${p.desc}</p><div class="product-bottom"><span class="price">${money(p.price)}</span><button class="btn small" data-add="${p.id}">＋ Adicionar</button></div></div></article>`).join(""):`<div class="empty">Não encontramos doces com essa busca. Tente outro nome ou categoria. ♡</div>`;
+ $("products").querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>addToCart(Number(b.dataset.add))));
+}
+function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart();toast("Delícia adicionada ao carrinho! ♡")}
+function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];renderCart()}
+function renderCart(){
+ const entries=Object.entries(cart);
+ $("cartCount").textContent=entries.reduce((s,[,q])=>s+q,0);
+ $("cartItems").innerHTML=entries.length?entries.map(([id,q])=>{const p=products.find(x=>x.id===Number(id));return `<div class="cart-row"><img src="imagens/${p.img}" alt=""><div><strong>${p.name}</strong><small>${money(p.price)} cada</small><div class="qty"><button data-change="${id}" data-delta="-1" aria-label="Diminuir quantidade">−</button><span>${q}</span><button data-change="${id}" data-delta="1" aria-label="Aumentar quantidade">＋</button></div></div><button class="remove" data-remove="${id}">Remover</button></div>`}).join(""):`<div class="cart-empty">Seu carrinho ainda está vazio. ♡<br>Escolha uma delícia do catálogo para começar.</div>`;
+ const total=entries.reduce((s,[id,q])=>s+products.find(p=>p.id===Number(id)).price*q,0);
+ $("cartTotal").textContent=money(total);
+ $("cartItems").querySelectorAll("[data-change]").forEach(b=>b.addEventListener("click",()=>changeQty(Number(b.dataset.change),Number(b.dataset.delta))));
+ $("cartItems").querySelectorAll("[data-remove]").forEach(b=>b.addEventListener("click",()=>{delete cart[Number(b.dataset.remove)];renderCart()}));
+ $("checkoutBtn").disabled=!entries.length;$("checkoutBtn").style.opacity=entries.length?"1":".55";
+}
+function openCart(){$("cartBackdrop").classList.add("show");$("cartBackdrop").setAttribute("aria-hidden","false")}
+function closeCart(){$("cartBackdrop").classList.remove("show");$("cartBackdrop").setAttribute("aria-hidden","true")}
+let toastTimer;function toast(msg){$("toast").textContent=msg;$("toast").classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>$("toast").classList.remove("show"),2400)}
+$("filters").addEventListener("click",e=>{const b=e.target.closest("[data-category]");if(!b)return;category=b.dataset.category;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderProducts()});
+$("searchInput").addEventListener("input",renderProducts);$("sortSelect").addEventListener("change",renderProducts);
+$("focusSearch").addEventListener("click",()=>{$("searchInput").focus();$("catalogo").scrollIntoView({behavior:"smooth"})});
+$("cartOpen").addEventListener("click",openCart);$("cartClose").addEventListener("click",closeCart);
+$("cartBackdrop").addEventListener("click",e=>{if(e.target===$("cartBackdrop"))closeCart()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCart()});
+function sendWhatsApp(){
+ const phone=""; // Opcional: informe o WhatsApp da confeitaria com DDI e DDD, somente números.
+ if(!phone){toast("Adicione o WhatsApp da confeitaria no código para ativar os pedidos.");return}
+ const entries=Object.entries(cart);
+ const lines=entries.map(([id,q])=>{const p=products.find(x=>x.id===Number(id));return `• ${p.name} — ${q} x ${money(p.price)} = ${money(p.price*q)}`});
+ const total=entries.reduce((s,[id,q])=>s+products.find(p=>p.id===Number(id)).price*q,0);
+ const message=`Olá! Gostaria de consultar este pedido na Confeitaria Bom Sabor:\n\n${lines.join("\n")}\n\nTotal estimado: ${money(total)}\nPoderiam confirmar disponibilidade e entrega?`;
+ window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`,"_blank","noopener");
+}
+$("checkoutBtn").addEventListener("click",sendWhatsApp);$("contactBtn").addEventListener("click",()=>{if(Object.keys(cart).length){openCart()}else sendWhatsApp()});
+$("accountBtn").addEventListener("click",()=>toast("A área de conta é apenas demonstrativa e ainda não possui cadastro."));
+$("menuBtn").addEventListener("click",()=>{const links=[["Início","#inicio"],["Catálogo","#catalogo"],["Nossa história","#historia"],["Contato","#contato"]];const choice=prompt("Digite o número da seção:\n1. Início\n2. Catálogo\n3. Nossa história\n4. Contato");if(choice&&links[Number(choice)-1])document.querySelector(links[Number(choice)-1][1]).scrollIntoView({behavior:"smooth"})});
+$("year").textContent=new Date().getFullYear();renderProducts();renderCart();
+</script>
+</body>
+</html>
